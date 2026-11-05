@@ -1,0 +1,1 @@
+{"edges":[{"from":"Depot","to":"Library","cost":2.5},{"from":"Library","to":"Clinic","cost":1.2},{"from":"Depot","to":"Clinic","cost":6},{"from":"Clinic","to":"Market","cost":1.5},{"from":"Library","to":"Market","cost":4}]}

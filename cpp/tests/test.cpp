@@ -1,0 +1,3 @@
+#include "Core.h"
+#include <cassert>
+int main(){lord_sumi::RouteGraph<5,8> g;assert(g.add(0,1,2));assert(g.add(1,3,2));assert(g.add(0,3,9));auto r=g.shortest(0,3);assert(r.valid&&r.reachable&&r.cost==4&&r.length==3);assert(g.shortest(3,0).valid&&!g.shortest(3,0).reachable);assert(!g.add(0,8,1));assert(g.fault());assert(!g.shortest(0,3).valid);g.reset();assert(g.add(0,0,0));assert(g.shortest(0,0).reachable);}
